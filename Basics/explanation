@@ -1,0 +1,4 @@
+to initialize ----> git initialize
+for tracking file or changes ----> git add <name of file>/git add .
+to track changes ----> git status
+move files that are ready to be push ----> git commit -m "commit message"

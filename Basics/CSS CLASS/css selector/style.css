@@ -1,0 +1,60 @@
+/* universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* element name selector - only use if you want to style all the occurence of selected element */
+p {
+    color: yellow;
+}
+/* id selector '#' */
+#first-paragraph {
+    background-color: red;
+}
+/* class selector '.' */
+.other-paragraphs {
+    background-color: green;
+}
+/* attribute selector */
+input[type="email"] {
+    background-color: green;
+}
+a[href] {
+    text-decoration: none;
+}
+/* pseudo-class selector */
+input[type="password"]:hover {
+    background-color: blueviolet;
+}
+/* pseudo-element selector */
+#first-paragraph::first-letter { */
+    color: ;: orange;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* multiple selectors */
+#first-paragraph, .other-paragraphs, a[href], input, h1 {
+    margin-bottom: 16px;
+}
+/* elementname.classname selector */
+div.just-a-div {
+    background-color: brown;
+}
+/* descendant selector */
+.parent p {
+    background-color: blueviolet;
+}
+/* child selector */
+.parent > p {
+    background-color: rgb(110, 5, 110);
+}
+/* adjacent sibling selector */
+h1 + p {
+    font-weight: 600;
+}
+/* general sibling selector */
+p ~ div {
+    height: 200px;
+    width: 100%;
+}

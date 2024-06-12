@@ -1,0 +1,66 @@
+
+/* css selectors, div is element selector, background-color and others are the properties while the colors & numbers are the values */
+
+div {
+    background-color: greenyellow;
+    height: 200px;
+    width: 100%;
+}
+
+/* universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* element name selector - only use if you want to style all the occurence of selected element */
+p {
+    color: blueviolet;
+}
+/* id selector '#' */
+#first-paragraph {
+    background-color: red;
+}
+/* class selector '.' */
+.other-paragraphs {
+    background-color: green;
+}
+input {
+    background-color: aliceblue;
+}
+/* attribute selector */
+input[type="email"] {
+    background-color: green;
+}
+
+a[href] {
+    text-decoration: none;
+}
+/* pseudo-class selector */
+input[type="password"]:hover {
+    background-color: blueviolet;
+}
+/* pseudo-element selector */
+#first-paragraph::first-letter { */
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* multiple selectors */
+#first-paragraph, .other-paragraph, a[href], input, h1 {
+    margin-bottom: 16px;
+}
+/* element-name class-name selector */
+div.other-paragraphs {
+    color: aquamarine;
+}
+/* adjacent sibling selectors */
+.parent p {
+     color: blueviolet;
+}
+
+
+p ~ div {
+    height: 200px;
+    width: 100px
+}
