@@ -2,3 +2,5 @@ to initialize ----> git initialize
 for tracking file or changes ----> git add <name of file>/git add .
 to track changes ----> git status
 move files that are ready to be push ----> git commit -m "commit message"
+connect online repo to local code ----> git remote add origin https://github.com/Salmon-97/CHI-Backend-basics.git
+send code to online repo ----> git push origin <branch name>       
